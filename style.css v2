@@ -1,4 +1,0 @@
-/* Add this near your #overlay rule or at the end of the file */
-#overlay.hidden {
-  display: none;
-}
