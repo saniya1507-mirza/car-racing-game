@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Endless Racer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui-top">
+    <div id="score">SCORE: 0</div>
+    <div id="highscore">HIGH: 0</div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="overlay" class="hidden">
+    <div id="game-over-card">
+      <h1 id="go-title">Game Over</h1>
+      <p id="go-score">Score: 0</p>
+      <p id="go-highscore">Highscore: 0</p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <div id="touch-controls" class="hidden">
+    <button id="leftBtn" class="touch-btn">◀</button>
+    <button id="rightBtn" class="touch-btn">▶</button>
+  </div>
+
+  <div id="help">
+    <p>Use ← / → or A / D to steer. Tap left/right on mobile. Avoid traffic!</p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
