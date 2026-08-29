@@ -59,6 +59,7 @@ body{
   z-index:30;
 }
 
+/* Overlay (game over) */
 #overlay{
   position:absolute;
   inset:0;
@@ -67,6 +68,11 @@ body{
   justify-content:center;
   background: linear-gradient(180deg, rgba(6,8,10,0.45), rgba(0,0,0,0.65));
   z-index:50;
+}
+
+/* Ensure the hidden class can override the #overlay rule */
+#overlay.hidden {
+  display: none;
 }
 
 .hidden{display:none}
